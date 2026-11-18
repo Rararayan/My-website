@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>らららやんの自己紹介</title>
+  <style>
+    /* 全体の基本設定 */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      /* ▼ 文字の色（基本の本文色）を変える場合はここを変更 */
+      color: #1e293b;
+      background-color: #f0f9ff;
+      line-height: 1.8;
+      overflow-wrap: break-word;
+    }
+
+    /* ヘッダー・ページ内メニュー */
+    header {
+      background-color: #0284c7;
+      color: #ffffff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.05em;
+    }
+
+    header p {
+      margin: 0 0 1.5rem 0;
+      font-size: 0.95rem;
+      color: #e0f2fe;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #ffffff;
+      /* ▼ メニューボタンの文字色を変える場合はここを変更 */
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #e0f2fe;
+    }
+
+    /* メインコンテンツ */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+      border-top: 5px solid #38bdf8;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.35rem;
+      /* ▼ 見出しの文字色を変える場合はここを変更 */
+      color: #0369a1;
+      border-bottom: 2px solid #bae6fd;
+      padding-bottom: 0.4rem;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-box {
+      background-color: #f0f9ff;
+      border-left: 4px solid #38bdf8;
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin-top: 1rem;
+    }
+
+    /* リンクのスタイル */
+    a.external-link {
+      /* ▼ 本文中リンクの文字色を変える場合はここを変更 */
+      color: #0284c7;
+      font-weight: bold;
+      word-break: break-all;
+    }
+
+    a.external-link:hover {
+      text-decoration: none;
+    }
+
+    /* フッター */
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.85rem;
+      color: #475569;
+    }
+
+    /* 狭い画面（スマートフォンなど）向けの微調整 */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section {
+        padding: 1.25rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 80%;
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>らららやん</h1>
+    <p>大学1年生・同級生のみなさんよろしくお願いします！</p>
+    <nav aria-label="ページ内メニュー">
+      <ul>
+        <li><a href="#intro">自己紹介</a></li>
+        <li><a href="#learning">今学んでいること</a></li>
+        <li><a href="#future">これからやってみたいこと</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- セクション1：自己紹介 -->
+    <section id="intro">
+      <h2>自己紹介</h2>
+      <!-- ▼ 自己紹介文を変える場合は、下の <p>〜</p> の中身を書き換えてください -->
+      <p>
+        はじめまして、らららやんです！小学生から大学1年生の今まで水泳を続けています。
+      </p>
+      <p>
+        高校2年の7月のインターハイ後、50メートルバタフライのタイムが当時は24.9秒のままで、なかなか伸びないことに悩んでいました。そこで、高校2年の7月から今まで週約4回の練習をする中で、プロ選手の動画を見たりコーチへ積極的に質問をしたりしてフォームの改善に努めました。その結果、高校卒業後の4月にタイムが24.2秒まで縮みました。
+      </p>
+      <div class="highlight-box">
+        <p>
+          関連リンク：<a class="external-link" href="https://tokyo-swim.org/" target="_blank" rel="noopener noreferrer">東京都水泳協会の公式サイト</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- セクション2：今学んでいること -->
+    <section id="learning">
+      <h2>今学んでいること</h2>
+      <!-- ▼ 今学んでいることの文章を変える場合はここを書き換えてください -->
+      <p>
+        現在は大学で<strong>情報工学</strong>を学んでいます。プログラミングやWebページの仕組みなど、基礎から少しずつ身につけているところです。同じ授業を受けている人がいたら、ぜひ気軽に話しかけてください！
+      </p>
+    </section>
+
+    <!-- セクション3：これからやってみたいこと -->
+    <section id="future">
+      <h2>これからやってみたいこと</h2>
+      <!-- ▼ これからやってみたいことの文章を変える場合はここを書き換えてください -->
+      <p>
+        大学生活を通じて、<strong>自分の生きがい探求</strong>に取り組んでいきたいです。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; らららやん</p>
+  </footer>
+
+</body>
+</html>
